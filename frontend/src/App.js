@@ -1,19 +1,18 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/home';  // Ensure this matches the actual file name (case-sensitive)
+// src/App.js
+
+import React from 'react';
+import { WorkoutsProvider } from './hooks/useWorkoutsContext';  // Ensure this path is correct
 import Navbar from './components/Navbar';
+import WorkoutDetails from './components/WorkoutDetails';
+import WorkoutForm from './components/WorkoutForm';
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Navbar />
-        <div className="pages">
-          <Routes>
-            <Route path="/" element={<Home />} />
-          </Routes>
-        </div>
-      </BrowserRouter>
-    </div>
+    <WorkoutsProvider>
+      <Navbar />
+      <WorkoutDetails />
+      <WorkoutForm />
+    </WorkoutsProvider>
   );
 }
 

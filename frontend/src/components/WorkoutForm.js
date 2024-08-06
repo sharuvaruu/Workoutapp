@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { useWorkoutsContext } from '../hooks/useWorkoutsContext';
 
 const WorkoutForm = () => {
@@ -28,12 +28,12 @@ const WorkoutForm = () => {
         setError(json.error);
         setEmptyFields(json.emptyFields || []);
       } else {
+        dispatch({ type: 'CREATE_WORKOUT', payload: json });
         setEmptyFields([]);
         setError(null);
         setTitle('');
         setLoad('');
         setReps('');
-        dispatch({ type: 'CREATE_WORKOUT', payload: json });
       }
     } catch (err) {
       console.error('Failed to create workout:', err);

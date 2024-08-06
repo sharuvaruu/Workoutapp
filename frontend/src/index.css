@@ -26,7 +26,7 @@ header a {
   color: #333;
   text-decoration: none;
 }
-.pages{
+.pages {
   max-width: 1400px;
   padding: 20px;
   margin: 0 auto;
@@ -36,12 +36,20 @@ header a {
 .home {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  gap: 100px;
+  gap: 20px; /* Adjust gap if needed */
+}
+.workout-list {
+  display: flex;
+  flex-direction: column;
+}
+.workout-form {
+  display: flex;
+  flex-direction: column;
 }
 .workout-details {
   background: #fff;
   border-radius: 4px;
-  margin: 20px auto;
+  margin: 20px 0;
   padding: 20px;
   position: relative;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
@@ -99,4 +107,31 @@ div.error {
 }
 input.error {
   border: 1px solid var(--error);
+}
+/* homepage */
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px; /* Adjust gap if needed */
+}
+
+.workout-list-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.workout-form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* workout list and form */
+.workout-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.workout-form {
+  display: flex;
+  flex-direction: column;
 }
