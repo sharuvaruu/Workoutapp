@@ -1,12 +1,11 @@
 # Workoutapp
 
 ## Overview
-Workoutapp is a MERN stack application designed to help users track their workout routines and progress.
+Workoutapp is a MERN stack application designed to help users track their workout routines and progress. This is my first attempt with MERN
 
 ## Features
-- User authentication and authorization
+
 - Create, read, update, and delete workouts
-- Track progress over time
 - Responsive design
 
 ## Installation
